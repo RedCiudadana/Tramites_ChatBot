@@ -1,0 +1,288 @@
+[
+  {
+    "id": 27,
+    "name": "Medio Ambiente",
+    "description": "Rectoría ambiental y de los recursos naturales, buscando el equilibrio del patrimonio natural con pertinencia cultural y de género.",
+    "highlight": true,
+    "subCategories": [
+      "/api/sub_categories/44"
+    ],
+    "imageFile": null,
+    "imageName": "iconos-41-62f417329f49c546296557.png",
+    "imageSize": 7480,
+    "imageUrl": "/images/categories/iconos-41-62f417329f49c546296557.png",
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-24T12:17:41-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "herberth.arauz@transparencia.gob.gt"
+  },
+  {
+    "id": 28,
+    "name": "Economía",
+    "description": "Desarrollar condiciones que impulsan la competitividad del país a efecto de posicionar a Guatemala como uno de los mejores destinos para la inversión nacional y extranjera.",
+    "highlight": true,
+    "subCategories": [
+      "/api/sub_categories/50",
+      "/api/sub_categories/58"
+    ],
+    "imageFile": null,
+    "imageName": "iconos-35-62f4173cae7aa630921916.png",
+    "imageSize": 9897,
+    "imageUrl": "/images/categories/iconos-35-62f4173cae7aa630921916.png",
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-24T12:17:57-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "herberth.arauz@transparencia.gob.gt"
+  },
+  {
+    "id": 29,
+    "name": "Territorio, Vivienda e Infraestructura",
+    "description": "Rectoría del sector público a cargo de la ejecución del régimen jurídico relativo a la vivienda y asentamientos humanos, y administrar en forma descentralizada los mecanismos financieros del sector público para propiciar el desarrollo habitacional del país.",
+    "highlight": true,
+    "subCategories": [
+      "/api/sub_categories/54"
+    ],
+    "imageFile": null,
+    "imageName": "iconos-47-62f41721e9023830390596.png",
+    "imageSize": 4538,
+    "imageUrl": "/images/categories/iconos-47-62f41721e9023830390596.png",
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-24T12:17:28-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "herberth.arauz@transparencia.gob.gt"
+  },
+  {
+    "id": 30,
+    "name": "Educación, Cultura y Deporte",
+    "description": "Rectoría del desarrollo cultural del país y que contribuye al fomento de la actividad educativa, deportiva y recreativa",
+    "highlight": true,
+    "subCategories": [
+      "/api/sub_categories/46"
+    ],
+    "imageFile": null,
+    "imageName": "iconos-36-62f416f6ef2e9510713224.png",
+    "imageSize": 3000,
+    "imageUrl": "/images/categories/iconos-36-62f416f6ef2e9510713224.png",
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-24T12:17:10-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "herberth.arauz@transparencia.gob.gt"
+  },
+  {
+    "id": 31,
+    "name": "Trabajo",
+    "description": "Promover el  trabajo decente, el dialogo social, la cultura de respeto a la legislación laboral, el bienestar de la sociedad y la protección de los grupos vulnerables en el mundo del trabajo.",
+    "highlight": false,
+    "subCategories": [
+      "/api/sub_categories/47"
+    ],
+    "imageFile": null,
+    "imageName": null,
+    "imageSize": null,
+    "imageUrl": null,
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-24T12:21:20-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "herberth.arauz@transparencia.gob.gt"
+  },
+  {
+    "id": 32,
+    "name": "Energía",
+    "description": "Rectoría del régimen normativo aplicable al fomento, producción, distribución y comercialización de la energía, hidrocarburos, y la explotación de los recursos mineros.",
+    "highlight": false,
+    "subCategories": [
+      "/api/sub_categories/48"
+    ],
+    "imageFile": null,
+    "imageName": null,
+    "imageSize": null,
+    "imageUrl": null,
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-24T12:21:38-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "herberth.arauz@transparencia.gob.gt"
+  },
+  {
+    "id": 33,
+    "name": "Seguridad",
+    "description": "Procurar la gobernabilidad, la seguridad interior y el apoyo a la justicia a través de la coordinación sectorial y la participación de la sociedad, propiciando las condiciones necesarias para un desarrollo integral.",
+    "highlight": false,
+    "subCategories": [
+      "/api/sub_categories/56"
+    ],
+    "imageFile": null,
+    "imageName": null,
+    "imageSize": null,
+    "imageUrl": null,
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-24T12:21:53-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "herberth.arauz@transparencia.gob.gt"
+  },
+  {
+    "id": 34,
+    "name": "Mediación y Diálogo",
+    "description": "Propiciar espacios, mecanismos y procesos de diálogo para la prevención, gestión y transformación de los conflictos sociales en el territorio nacional.",
+    "highlight": false,
+    "subCategories": [
+      "/api/sub_categories/49",
+      "/api/sub_categories/57"
+    ],
+    "imageFile": null,
+    "imageName": null,
+    "imageSize": null,
+    "imageUrl": null,
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-24T12:22:29-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "herberth.arauz@transparencia.gob.gt"
+  },
+  {
+    "id": 35,
+    "name": "Manejo de Animales y Vegetales",
+    "description": "Administrar normas claras y estables para el aprovechamiento y uso sostenible del patrimonio productivo agropecuario, de los recursos naturales y de la inocuidad de los alimentos no procesados.",
+    "highlight": false,
+    "subCategories": [
+      "/api/sub_categories/45"
+    ],
+    "imageFile": null,
+    "imageName": null,
+    "imageSize": null,
+    "imageUrl": null,
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-24T12:22:57-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "herberth.arauz@transparencia.gob.gt"
+  },
+  {
+    "id": 36,
+    "name": "Comunicaciones y Transporte",
+    "description": "Sin descripción",
+    "highlight": false,
+    "subCategories": [
+      "/api/sub_categories/60",
+      "/api/sub_categories/61"
+    ],
+    "imageFile": null,
+    "imageName": null,
+    "imageSize": null,
+    "imageUrl": null,
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-26T02:02:58-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "diegoeauyonh@gmail.com"
+  },
+  {
+    "id": 37,
+    "name": "Servicios de Migración",
+    "description": "Impulsar, coordinar y dar seguimiento a las acciones de promoción para la integración económica, el comercio exterior, el turismo, así como el intercambio académico y cultural en el marco de la Política Exterior del Estado de Guatemala.",
+    "highlight": false,
+    "subCategories": [
+      "/api/sub_categories/51",
+      "/api/sub_categories/55"
+    ],
+    "imageFile": null,
+    "imageName": null,
+    "imageSize": null,
+    "imageUrl": null,
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-24T12:23:42-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "herberth.arauz@transparencia.gob.gt"
+  },
+  {
+    "id": 38,
+    "name": "Programas y Ayudas Sociales",
+    "description": "Establecer distintos ámbitos de intervención, tales como: salud, educación, alimentación, vulnerabilidad, seguridad social, empleo y entretenimiento, entre otros; con el objetivo de brindar servicios básicos y mejorar las condiciones de vida de la población que vive en condición vulnerable, según sus necesidades particulares.",
+    "highlight": false,
+    "subCategories": [],
+    "imageFile": null,
+    "imageName": null,
+    "imageSize": null,
+    "imageUrl": null,
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-24T12:24:12-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "herberth.arauz@transparencia.gob.gt"
+  },
+  {
+    "id": 39,
+    "name": "Alimentación",
+    "description": "Conoce el proceso para gestionar la manipulación y elaboración de alimentos.",
+    "highlight": false,
+    "subCategories": [],
+    "imageFile": null,
+    "imageName": null,
+    "imageSize": null,
+    "imageUrl": null,
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-24T12:24:33-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "herberth.arauz@transparencia.gob.gt"
+  },
+  {
+    "id": 40,
+    "name": "Salud",
+    "description": "Velar por el cumplimiento de lo relativo a la salud preventiva y curativa y a las acciones de protección, promoción, recuperación y rehabilitación de la salud física y mental de los habitantes del país.",
+    "highlight": false,
+    "subCategories": [
+      "/api/sub_categories/53"
+    ],
+    "imageFile": null,
+    "imageName": null,
+    "imageSize": null,
+    "imageUrl": null,
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-24T12:24:46-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "herberth.arauz@transparencia.gob.gt"
+  },
+  {
+    "id": 41,
+    "name": "Pensiones",
+    "description": "Administrar el régimen de Clases Pasivas Civiles del Estado.",
+    "highlight": false,
+    "subCategories": [],
+    "imageFile": null,
+    "imageName": "iconos-48-62f41771eadbf198359915.png",
+    "imageSize": 2962,
+    "imageUrl": "/images/categories/iconos-48-62f41771eadbf198359915.png",
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-24T14:26:00-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "herberth.arauz@transparencia.gob.gt"
+  },
+  {
+    "id": 42,
+    "name": "Inscripciones y Registros",
+    "description": "Sin descripción",
+    "highlight": false,
+    "subCategories": [
+      "/api/sub_categories/59",
+      "/api/sub_categories/52"
+    ],
+    "imageFile": null,
+    "imageName": "iconos-38-62f41764b815f869449289.png",
+    "imageSize": 4018,
+    "imageUrl": "/images/categories/iconos-38-62f41764b815f869449289.png",
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-26T02:02:58-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "diegoeauyonh@gmail.com"
+  },
+  {
+    "id": 43,
+    "name": "Asociaciones",
+    "description": "Pendiente",
+    "highlight": false,
+    "subCategories": [],
+    "imageFile": null,
+    "imageName": "iconos-33-62f4174bdc3e3579558853.png",
+    "imageSize": 6859,
+    "imageUrl": "/images/categories/iconos-33-62f4174bdc3e3579558853.png",
+    "createdAt": "2022-07-21T11:16:14-06:00",
+    "updatedAt": "2022-08-10T14:38:35-06:00",
+    "createdBy": "diegoeauyonh@gmail.com",
+    "updatedBy": "jherrera@redciudadana.org.gt"
+  }
+]
