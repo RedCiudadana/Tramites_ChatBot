@@ -1,44 +1,40 @@
-import json
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from twilio.twiml.messaging_response import MessagingResponse
+import json
 
 app = Flask(__name__)
 
 # Leer el archivo JSON y almacenar la información en una lista
-with open("tramites.json", "r") as file:
-    tramites = json.load(file)
-
-@app.route("/bot", methods=["POST"])
+with open("servicios.json", "r", encoding="utf-8") as file:
+    data = json.load(file)
+    
+@app.route('/bot', methods=['POST'])
 def bot():
-    incoming_msg = request.values.get("Body", "").strip().lower()
+    incoming_msg = request.values.get('Body', '').lower().strip()
     resp = MessagingResponse()
     msg = resp.message()
+    response_message = ""
 
-    if "ayuda" in incoming_msg:
-        msg.body("¡Hola! Soy el chatbot de trámites. Puedo ayudarte a encontrar información sobre trámites disponibles. "
-                 "Escribe el nombre del trámite que deseas consultar.")
+    # Lógica del chatbot
+    if 'consulta' in incoming_msg:
+        response_message = "¡Bienvenido al chatbot de consultas! Por favor, ingresa el nombre del trámite que deseas consultar."
     else:
-        # Buscar el trámite en la lista de tramites
-        found_tramite = None
-        for tramite in tramites:
-            if incoming_msg == tramite["name"].lower():
-                found_tramite = tramite
-                break
-
-        if found_tramite:
-            # Si se encontró el trámite, se envía su información
-            msg.body(f"Trámite: {found_tramite['name']}\n"
-                     f"Institución: {found_tramite['institution']['name']}\n"
-                     f"Descripción: {found_tramite['description']}\n"
-                     f"Requisitos: {found_tramite['requirements']}\n"
-                     f"Costo: {found_tramite['cost']} {found_tramite['currency']['code']}\n"
-                     f"Tiempo de respuesta: {found_tramite['timeResponse']}\n"
-                     f"Más información: {found_tramite['url']}")
+        # Buscar el trámite en el archivo JSON
+        result = next((servicio for servicio in data if servicio['name'].lower() == incoming_msg), None)
+        if result:
+            response_message = f"Nombre: {result['name']}\n"
+            response_message += f"Descripción: {result['description']}\n"
+            response_message += f"Institución: {result['institution']['name']}\n"
+            response_message += f"Categoría: {result['subcategory']['name']}\n"
+            response_message += f"Costo: {result['cost']} {result['currency']['symbol']}\n"
+            response_message += f"Tiempo de Respuesta: {result['timeResponse']}\n"
+            response_message += f"Normativa: {result['normative']}\n"
+            response_message += f"Más información: {result['url']}"
         else:
-            # Si no se encontró el trámite, se envía un mensaje de error
-            msg.body("Lo siento, no encontré información sobre ese trámite. Prueba escribiendo 'ayuda' para recibir asistencia.")
+            response_message = "Lo siento, no encontré información sobre ese trámite. Por favor, intenta con otro nombre."
 
+    msg.body(response_message)
     return str(resp)
 
-if __name__ == "__main__":
-    app.run()
+if __name__ == '__main__':
+    app.run(debug=True)
