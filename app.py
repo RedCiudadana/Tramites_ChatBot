@@ -17,11 +17,11 @@ auth_token = '4fc22d2db296c85217144ddd23de91c8'    # Reemplaza con tu token de a
 twilio_phone_number = 'whatsapp:+14155238886'  # Reemplaza con el número de teléfono de Twilio que recibirá y enviará mensajes de WhatsApp
 client = Client(account_sid, auth_token)
 
-def send_message(message):
+def send_message(message, to_number):
     # Enviar el mensaje de respuesta al número de teléfono del usuario
     response = MessagingResponse()
     response.message(message)
-    client.messages.create(body=response, from_=twilio_phone_number, to='whatsapp:+50258156003')  # Reemplaza 'NUMERO_DEL_USUARIO' con el número de teléfono del usuario que envió el mensaje original
+    client.messages.create(body=response, from_=twilio_phone_number, to=to_number)  # Reemplaza 'NUMERO_DEL_USUARIO' con el número de teléfono del usuario que envió el mensaje original
 
 # Obtener los nombres de los trámites para el cálculo de la similitud del coseno
 tramite_names = [tramite['name'].lower() for tramite in tramites_data]
@@ -60,9 +60,10 @@ def process_message(message):
 # Ruta para recibir mensajes de WhatsApp
 @app.route('/webhook', methods=['POST'])
 def webhook():
+    from_number = request.form.get('From', '')  # Obtener el número del remitente (usuario de WhatsApp)
     data = request.form.get('Body', '').strip()
     response_message = process_message(data)  # Procesar el mensaje
-    send_message(response_message)  # Enviar respuesta al usuario
+    send_message(response_message, from_number)  # Enviar respuesta al usuario
     return '', 200
 
 
